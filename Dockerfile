@@ -8,5 +8,6 @@ FROM openjdk:17-jdk-alpine
 #COPY target/icm-0.0.1-SNAPSHOT.jar /app/icm.jar
 COPY target/icm-0.0.1-SNAPSHOT.jar icm.jar
 
+EXPOSE 8081
 # Command to run the Java application
 CMD ["java", "-jar", "icm.jar"]
